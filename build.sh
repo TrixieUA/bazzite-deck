@@ -15,16 +15,16 @@ RELEASE="$(rpm -E %fedora)"
 # this installs a package from fedora repos
 #rpm-ostree install screen
 
-rpm -e kernel-core --allmatches --nodeps 
-rpm -e kernel --nodeps --allmatches
-rpm -e kernel-modules --nodeps --allmatches
-rpm -e kernel-devel --nodeps --allmatches
-rpm -e kernel-devel-matched --nodeps --allmatches
-rpm -e kernel-headers --nodeps --allmatches
-rpm -e kernel-modules-core --nodeps --allmatches
-rpm -e kernel-modules-extra --nodeps --allmatches
-rpm -e kernel-modules-internal --nodeps --allmatches
-rpm -e kernel-uki-virt --nodeps --allmatches
+rpm -e kernel-core --allmatches --nodeps 2>/dev/null
+rpm -e kernel --nodeps --allmatches 2>/dev/null
+rpm -e kernel-modules --nodeps --allmatches 2>/dev/null
+rpm -e kernel-devel --nodeps --allmatches 2>/dev/null
+rpm -e kernel-devel-matched --nodeps --allmatches 2>/dev/null
+rpm -e kernel-headers --nodeps --allmatches 2>/dev/null
+rpm -e kernel-modules-core --nodeps --allmatches 2>/dev/null
+rpm -e kernel-modules-extra --nodeps --allmatches 2>/dev/null
+rpm -e kernel-modules-internal --nodeps --allmatches 2>/dev/null
+rpm -e kernel-uki-virt --nodeps --allmatches 2>/dev/null
 
 cd /etc/yum.repos.d/
 wget https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-$(rpm -E %fedora)/bieszczaders-kernel-cachyos-fedora-$(rpm -E %fedora).repo
