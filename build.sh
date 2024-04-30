@@ -27,7 +27,7 @@ rpm -e kernel-uki-virt --nodeps --allmatches 2>/dev/null
 cd /etc/yum.repos.d/
 wget https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-$(rpm -E %fedora)/bieszczaders-kernel-cachyos-fedora-$(rpm -E %fedora).repo
 
-sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
+sudo dnf install kernel-cachyos kernel-cachyos-devel-matched akmods -y
 
 sudo akmods --force
 
