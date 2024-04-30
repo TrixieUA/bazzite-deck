@@ -29,6 +29,8 @@ wget https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fe
 
 sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
 
+sudo akmods --force
+
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
