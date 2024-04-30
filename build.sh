@@ -19,11 +19,9 @@ rpm -e kernel-core --allmatches --nodeps 2>/dev/null
 rpm -e kernel --nodeps --allmatches 2>/dev/null
 rpm -e kernel-modules --nodeps --allmatches 2>/dev/null
 rpm -e kernel-devel --nodeps --allmatches 2>/dev/null
-rpm -e kernel-devel-matched --nodeps --allmatches 2>/dev/null
 rpm -e kernel-headers --nodeps --allmatches 2>/dev/null
 rpm -e kernel-modules-core --nodeps --allmatches 2>/dev/null
 rpm -e kernel-modules-extra --nodeps --allmatches 2>/dev/null
-rpm -e kernel-modules-internal --nodeps --allmatches 2>/dev/null
 rpm -e kernel-uki-virt --nodeps --allmatches 2>/dev/null
 
 cd /etc/yum.repos.d/
