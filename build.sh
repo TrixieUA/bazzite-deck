@@ -22,6 +22,8 @@ rpm -e --nodeps xorg-x11-server-Xwayland
 rpm -e --nodeps wlroots
 
 rpm-ostree install \
+  --experimental \
+  --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched \
   gamescope \
   gamescope-libs \
   gamescope-libs.i686 \
