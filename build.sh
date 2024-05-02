@@ -20,10 +20,12 @@ rpm -e --nodeps --allmatches gamescope
 rpm -e --nodeps --allmatches gamescope-libs
 rpm -e --nodeps xorg-x11-server-Xwayland
 rpm -e --nodeps wlroots
-sudo dnf install gamescope gamescope-libs xorg-x11-server-Xwayland 
-sudo dnf install gamescope-libs.i686
 
-
+rpm-ostree install \
+  gamescope \
+  gamescope-libs \
+  gamescope-libs.i686 \
+  xorg-x11-server-Xwayland
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
