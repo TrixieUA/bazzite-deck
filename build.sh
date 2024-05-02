@@ -18,11 +18,12 @@ curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/c
 
 rpm-ostree override replace \
   --experimental \
-  --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched \
+  --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
-  gamescope-libs \
+  gamescope-libs.x86_64 \
   gamescope-libs.i686 \
   xorg-x11-server-Xwayland
+
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
