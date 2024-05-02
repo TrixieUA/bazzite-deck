@@ -16,7 +16,7 @@ RELEASE="$(rpm -E %fedora)"
 #rpm-ostree install screen
 curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/coprs/trixieua/deck/repo/fedora-$(rpm -E %fedora)/trixieua-deck-fedora-$(rpm -E %fedora).repo && \
 
-rpm -e --nodeps gamescope
+rpm -e --nodeps --allmatches gamescope
 rpm -e --nodeps gamescope-libs
 rpm -e --nodeps xorg-x11-server-Xwayland
 rpm -e --nodeps wlroots
