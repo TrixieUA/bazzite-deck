@@ -14,22 +14,9 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 #rpm-ostree install screen
+curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/coprs/trixieua/deck/repo/fedora-$(rpm -E %fedora)/trixieua-deck-fedora-$(rpm -E %fedora).repo && \
 
-rpm -e kernel-core --allmatches --nodeps 2>/dev/null
-rpm -e kernel --nodeps --allmatches 2>/dev/null
-rpm -e kernel-modules --nodeps --allmatches 2>/dev/null
-rpm -e kernel-devel --nodeps --allmatches 2>/dev/null
-rpm -e kernel-headers --nodeps --allmatches 2>/dev/null
-rpm -e kernel-modules-core --nodeps --allmatches 2>/dev/null
-rpm -e kernel-modules-extra --nodeps --allmatches 2>/dev/null
-rpm -e kernel-uki-virt --nodeps --allmatches 2>/dev/null
-
-cd /etc/yum.repos.d/
-wget https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-$(rpm -E %fedora)/bieszczaders-kernel-cachyos-fedora-$(rpm -E %fedora).repo
-
-sudo dnf install kernel-cachyos kernel-cachyos-devel-matched akmods -y
-
-sudo akmods --force
+sudo dnf distro-sync --refresh
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
