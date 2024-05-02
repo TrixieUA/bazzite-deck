@@ -21,7 +21,7 @@ rpm -e --nodeps --allmatches gamescope-libs
 rpm -e --nodeps xorg-x11-server-Xwayland
 rpm -e --nodeps wlroots
 sudo dnf install gamescope gamescope-libs xorg-x11-server-Xwayland 
-sudo dnf install gamescope-libs -- --arch=i686
+sudo dnf install gamescope-libs.i686
 
 
 # this would install a package from rpmfusion
