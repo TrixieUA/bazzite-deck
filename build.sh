@@ -16,12 +16,7 @@ RELEASE="$(rpm -E %fedora)"
 #rpm-ostree install screen
 curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/coprs/trixieua/deck/repo/fedora-$(rpm -E %fedora)/trixieua-deck-fedora-$(rpm -E %fedora).repo?arch=x86_64 && \
 
-rpm -e --nodeps --allmatches gamescope
-rpm -e --nodeps --allmatches gamescope-libs
-rpm -e --nodeps xorg-x11-server-Xwayland
-rpm -e --nodeps wlroots
-
-rpm-ostree install \
+rpm-ostree override replace \
   --experimental \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched \
   gamescope \
