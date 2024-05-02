@@ -16,7 +16,7 @@ RELEASE="$(rpm -E %fedora)"
 #rpm-ostree install screen
 curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/coprs/trixieua/deck/repo/fedora-$(rpm -E %fedora)/trixieua-deck-fedora-$(rpm -E %fedora).repo && \
 
-sudo dnf update --refresh
+sudo dnf update
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
