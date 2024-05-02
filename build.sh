@@ -21,8 +21,12 @@ rpm-ostree override replace \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
   gamescope-libs.x86_64 \
-  gamescope-libs.i686 \
   xorg-x11-server-Xwayland
+
+rpm-ostree override replace \
+  --experimental \
+  --from repo=copr:copr.fedorainfracloud.org:trixieua:deck:ml \
+  gamescope-libs.i686 
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
