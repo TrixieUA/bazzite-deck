@@ -4,33 +4,13 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
-
-### Install packages
-
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
-
-# this installs a package from fedora repos
-#rpm-ostree install screen
+# Enable copr repo
 curl -Lo /etc/yum.repos.d/trixieua-deck.repo https://copr.fedorainfracloud.org/coprs/trixieua/deck/repo/fedora-$(rpm -E %fedora)/trixieua-deck-fedora-$(rpm -E %fedora).repo?arch=x86_64 && \
 
+# Replace packages
 rpm-ostree override replace \
   --experimental \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
   gamescope-libs \
   xorg-x11-server-Xwayland
-
-rpm-ostree override replace \
-  --experimental \
-  --from repo=copr:copr.fedorainfracloud.org:trixieua:deck:ml \
-  gamescope-libs.i686 
-
-# this would install a package from rpmfusion
-# rpm-ostree install vlc
-
-#### Example for enabling a System Unit File
-
-systemctl enable podman.socket
