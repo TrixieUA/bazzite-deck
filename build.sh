@@ -13,4 +13,5 @@ rpm-ostree override replace \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
   gamescope-libs \
-  xorg-x11-server-Xwayland
+  xorg-x11-server-Xwayland \
+  wlroots
