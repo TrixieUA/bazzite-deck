@@ -20,7 +20,7 @@ rpm-ostree override replace \
   --experimental \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
-  gamescope-libs.x86_64 \
+  gamescope-libs \
   xorg-x11-server-Xwayland
 
 rpm-ostree override replace \
