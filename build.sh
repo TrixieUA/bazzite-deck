@@ -26,3 +26,9 @@ rpm-ostree override replace \
   mesa-libOSMesa \
   mesa-vdpau-drivers-freeworld \
   mesa-va-drivers-freeworld
+  
+# powershell
+  rpm-ostree install https://packages.microsoft.com/config/rhel/9/packages-microsoft-prod.rpm
+
+  rpm-ostree install powershell
+  
