@@ -29,6 +29,6 @@ rpm-ostree override replace \
   
 # powershell
   rpm-ostree install https://packages.microsoft.com/config/rhel/9/packages-microsoft-prod.rpm
-
+  sleep 30
   rpm-ostree install powershell
   
