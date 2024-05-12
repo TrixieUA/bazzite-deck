@@ -28,7 +28,5 @@ rpm-ostree override replace \
   mesa-va-drivers-freeworld
   
 # powershell
-  rpm-ostree install https://packages.microsoft.com/config/rhel/9/packages-microsoft-prod.rpm
-  sleep 30
-  rpm-ostree install powershell
+  rpm-ostree install https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/powershell-7.4.2-1.rh.x86_64.rpm
   
