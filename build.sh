@@ -25,7 +25,7 @@ rpm-ostree override replace \
   mesa-libxatracker \
   mesa-libOSMesa \
   mesa-vdpau-drivers-freeworld \
-  mesa-va-drivers-freeworld \
+  mesa-va-drivers-freeworld && \
 rpm-ostree install \
   prismlauncher \
   java-latest-openjdk \
