@@ -14,7 +14,7 @@ rpm-ostree override replace \
   gamescope \
   gamescope-libs \
   xorg-x11-server-Xwayland \
-  wlroots \
+  wlroots
 rpm-ostree install \
   prismlauncher \
   java-latest-openjdk \
