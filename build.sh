@@ -22,4 +22,5 @@ rpm-ostree install \
   java-1.8.0-openjdk \
   java-17-openjdk \
   java-21-openjdk \
-  klassy
+  klassy \
+  papirus-icon-theme
