@@ -25,4 +25,4 @@ rpm-ostree install \
   java-21-openjdk \
   klassy \
   papirus-icon-theme \
-  bibata-cursor-theme
+  bibata-cursor-themes
