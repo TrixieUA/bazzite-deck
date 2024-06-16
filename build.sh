@@ -17,7 +17,18 @@ rpm-ostree override replace \
   gamescope \
   gamescope-libs \
   xorg-x11-server-Xwayland \
-  wlroots
+  wlroots \
+  mesa-filesystem \
+  mesa-libglapi \
+  mesa-dri-drivers \
+  mesa-libgbm \
+  mesa-libEGL \
+  mesa-libGL \
+  mesa-vulkan-drivers \
+  mesa-libxatracker \
+  mesa-libOSMesa \
+  mesa-vdpau-drivers-freeworld \
+  mesa-va-drivers-freeworld && \
 rpm-ostree install \
   prismlauncher \
   java-latest-openjdk \
