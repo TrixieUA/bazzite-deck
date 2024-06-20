@@ -23,6 +23,7 @@ rpm-ostree override replace \
   mesa-dri-drivers \
   mesa-libgbm \
   mesa-libEGL \
+  mesa-libEGL-devel \
   mesa-libGL \
   mesa-vulkan-drivers \
   mesa-libxatracker \
