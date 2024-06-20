@@ -29,20 +29,4 @@ rpm-ostree override replace \
   mesa-libxatracker \
   mesa-libOSMesa \
   mesa-vdpau-drivers-freeworld \
-  mesa-va-drivers-freeworld && \
-rpm-ostree install \
-  prismlauncher \
-  java-latest-openjdk \
-  java-1.8.0-openjdk \
-  java-17-openjdk \
-  java-21-openjdk \
-  klassy \
-  papirus-icon-theme \
-  bibata-cursor-themes \
-  kvantum \
-  materia-kde6 \
-  materia-kde6-konsole \
-  materia-kde6-yakuake \
-  materia-kde6-decorations \
-  materia-kde6-kvantum \
-  materia-kde6-wallpapers
+  mesa-va-drivers-freeworld
