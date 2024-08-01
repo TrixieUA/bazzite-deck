@@ -23,6 +23,7 @@ rpm-ostree override replace \
   mesa-libEGL \
   mesa-libEGL-devel \
   mesa-libGL \
+  mesa-libOSMesa \
   mesa-vulkan-drivers \
   mesa-libxatracker \
   mesa-vdpau-drivers-freeworld \
