@@ -14,8 +14,6 @@ curl -Lo /etc/yum.repos.d/trixieua-materia-kde6.repo https://copr.fedorainfraclo
 rpm-ostree override replace \
   --experimental \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
-  gamescope \
-  gamescope-libs \
   mesa-filesystem \
   mesa-libglapi \
   mesa-dri-drivers \
