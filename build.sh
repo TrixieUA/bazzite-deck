@@ -15,18 +15,4 @@ rpm-ostree override replace \
   --experimental \
   --from repo=copr:copr.fedorainfracloud.org:trixieua:deck \
   gamescope \
-  gamescope-libs \
-  xorg-x11-server-Xwayland \
-  wlroots \
-  mesa-filesystem \
-  mesa-libglapi \
-  mesa-dri-drivers \
-  mesa-libgbm \
-  mesa-libEGL \
-  mesa-libEGL-devel \
-  mesa-libGL \
-  mesa-vulkan-drivers \
-  mesa-libxatracker \
-  mesa-libOSMesa \
-  mesa-vdpau-drivers-freeworld \
-  mesa-va-drivers-freeworld
+  gamescope-libs
