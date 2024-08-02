@@ -26,5 +26,6 @@ rpm-ostree override replace \
   mesa-libxatracker \
   mesa-vdpau-drivers-freeworld \
   mesa-va-drivers-freeworld \
+  xorg-x11-server-Xwayland \
   gamescope \
   gamescope-libs
