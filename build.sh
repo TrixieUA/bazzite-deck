@@ -25,4 +25,5 @@ rpm-ostree override replace \
   mesa-vulkan-drivers \
   mesa-libxatracker \
   mesa-vdpau-drivers-freeworld \
-  mesa-va-drivers-freeworld
+  mesa-va-drivers-freeworld &&
+  rpm-ostree override remove gamescope-libs.i686
